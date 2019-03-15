@@ -26,10 +26,17 @@ sudo docker run -d --restart=always \
 $rancher_command
 
 # wait until rancher server is ready
-while true; do
-  wget -T 5 -c https://localhost/ping && break
-  sleep 5
-done
+#while true; do
+  # wget -T 5 -c https://localhost/ping && break
+  # sleep 5
+
+   ## docker run \
+   ##  sleep 5             --net=host \
+   ##     --rm \
+   ##     $curl_prefix/curl -kLs https://localhost/ping && break
+#done
+ sleep 40
+
 
 # Login
 LOGINRESPONSE=$(docker run --net=host \

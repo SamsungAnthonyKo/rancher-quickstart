@@ -6,7 +6,7 @@ server:
   cpus: 1
   memory: 1500
 node:
-  count: 1
+  count: 2
   cpus: 1
   memory: 1500
 ip:
