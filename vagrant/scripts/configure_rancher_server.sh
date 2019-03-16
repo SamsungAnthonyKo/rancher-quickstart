@@ -35,7 +35,7 @@ $rancher_command
    ##     --rm \
    ##     $curl_prefix/curl -kLs https://localhost/ping && break
 #done
- sleep 40
+ sleep 60
 
 
 # Login
